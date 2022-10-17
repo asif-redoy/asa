@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>WebcamJS Test Page</title>
+	<title>CamerA Test Page</title>
 	<style type="text/css">
 		body { font-family: Helvetica, sans-serif; }
 		h2, h3 { margin-top:0; }
@@ -31,6 +31,9 @@
 			image_format: 'jpeg',
 			jpeg_quality: 90
 		});
+Webcam.set('constraints',{
+        facingMode: "environment"
+    });
 		Webcam.attach( '#my_camera' );
 	</script>
 	
